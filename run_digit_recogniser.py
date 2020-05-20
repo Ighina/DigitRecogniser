@@ -11,10 +11,10 @@ parser = argparse.ArgumentParser(
     description="A very, very basic digit recogniser")
 
 parser.add_argument('--train_dir',
-                    default="./free-spoken-digit-dataset-master/recordings/train",
+                    default="./Train",
                     help='Directory for training data')
 parser.add_argument('--test_dir',
-                    default="./free-spoken-digit-dataset-master/recordings/test",
+                    default="./Test",
                     help='Directory for test data')
 parser.add_argument('--number_of_states', '-states', dest='s', default=3, type=int,
                     help='Number of states for each HMM')
