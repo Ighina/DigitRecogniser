@@ -54,6 +54,8 @@ def Create_Transition_tables(num_hidden_states):
     return Transitions
 
 class MyViterbiDecoder:
+    # Class implementing Viterbi decoder: the class is inspired by https://github.com/Ore-an/asr_lab3
+    
     NLL_ZERO = 1e10  # define a constant representing -log(0).  This is really infinite, but approximate
 
     # it here with a very large number
